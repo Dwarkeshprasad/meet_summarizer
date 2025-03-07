@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mic Transcriber - Transcriber</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    #transcript {
+      border: 1px solid #ccc;
+      padding: 10px;
+      height: 200px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      background: #f9f9f9;
+      font-size: 14px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Mic Transcriber</h2>
+  <div>
+    <button id="start">Start Recording</button>
+    <button id="stop">Stop Recording</button>
+    <button id="download">Download Transcript</button>
+  </div>
+  <h3>Transcript:</h3>
+  <div id="transcript"></div>
+  <script src="transcriber.js"></script>
+</body>
+</html>
